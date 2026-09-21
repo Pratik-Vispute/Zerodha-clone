@@ -14,13 +14,17 @@ const { HoldingsModel } = require("./model/HoldingsModel");
 const { PositionsModel } = require("./model/PositionsModel");
 const {OrdersModel} = require("./model/OrdersModel")
 
-const { MONGO_URL, PORT } = process.env;
+const { MONGO_URL } = process.env;
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "http://localhost:3001"],
+    origin: [
+    "http://localhost:3000",
+    "http://localhost:3001"
+   ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
