@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-link{
+  margin-left: 40px;
+}
+
+.footer-links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.footer-links a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #387ed1;
+}
+
+
+.footer-col a {
+  text-decoration: none;   /* underline remove */
+  color: #666;             /* gray color */
+  font-size: 16px;
+  margin-bottom: 16px;
+  transition: 0.3s;
+}
+
+.footer-col a:hover {
+  color: #387ed1;          /* Zerodha blue */
+}
+
+#support-Hero{
+  background-color: rgb(56, 126, 209);
+  color: white;
+}
+
+#support-Hero a{
+  color: white;
+  margin-left: 25px;
+}
+
+#supportWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+}
+
+#support-Hero input{
+    padding: 18px 50px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+
+
+.form_container {
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  justify-self: center;
+  margin-top: 5rem;
+}
+
+.form_container > h2 {
+  margin-block: 1rem;
+  padding-block: 0.6rem;
+  color: rgba(0, 212, 255, 1);
+}
+
+.form_container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.form_container div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form_container input {
+  border: none;
+  padding: 0.5rem;
+  border-bottom: 1px solid gray;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.form_container input::placeholder {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.form_container button {
+  background-color: rgba(0, 212, 255, 1);
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+span a {
+  text-decoration: none;
+  color: rgba(0, 212, 255, 1);
+}
+
+
+
+/* =======================================
+   RESPONSIVE DESIGN - FRONTEND
+======================================= */
+
+@media (max-width: 992px) {
+
+  .nav-link{
+    margin-left: 15px;
+  }
+
+  #supportWrapper{
+    flex-direction: column;
+    margin: 0 30px;
+    gap: 30px;
+  }
+
+  #support-Hero input{
+    width: 100%;
+  }
+
+  .footer-links{
+    gap: 12px;
+  }
+
+  .footer-col{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px){
+
+  /* Navbar */
+
+  .navbar-brand img{
+    width:110px;
+  }
+
+  .navbar-nav{
+    text-align:center;
+    margin-top:15px;
+  }
+
+  .nav-link{
+    margin-left:0;
+    padding:10px 0;
+  }
+
+  /* Hero */
+
+  .container{
+    padding-left:20px !important;
+    padding-right:20px !important;
+  }
+
+  h1{
+    font-size:32px !important;
+  }
+
+  h2{
+    font-size:28px !important;
+  }
+
+  h3{
+    font-size:24px !important;
+  }
+
+  p{
+    font-size:15px;
+  }
+
+  img{
+    max-width:100%;
+    height:auto;
+  }
+
+  /* Support */
+
+  #supportWrapper{
+    margin:0 15px;
+  }
+
+  #support-Hero{
+    padding:25px 15px;
+  }
+
+  #support-Hero input{
+    padding:15px;
+  }
+
+  /* Signup/Login */
+
+  .form_container{
+    width:90%;
+    padding:25px;
+    margin-top:30px;
+  }
+
+  .form_container input{
+    font-size:15px;
+  }
+
+  .form_container button{
+    width:100%;
+  }
+
+  /* Footer */
+
+  .footer-links{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .footer-col{
+    text-align:center;
+  }
+
+}
+
+@media (max-width:480px){
+
+  h1{
+    font-size:26px !important;
+  }
+
+  h2{
+    font-size:22px !important;
+  }
+
+  h3{
+    font-size:20px !important;
+  }
+
+  p{
+    font-size:14px;
+  }
+
+  .form_container{
+    width:95%;
+    padding:20px;
+  }
+
+  .form_container h2{
+    font-size:24px;
+  }
+
+  .footer-links a{
+    font-size:13px;
+  }
+
+  .footer-col a{
+    font-size:14px;
+  }
+
+}
