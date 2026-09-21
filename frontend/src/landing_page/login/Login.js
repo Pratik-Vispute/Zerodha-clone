@@ -43,7 +43,7 @@ const Login = () => {
         handleSuccess(message);
 
         setTimeout(() => {
-          window.location.href = "http://localhost:3001";
+          window.location.href = "https://zerodha-dashboard-7kd3.onrender.com";;
         }, 1000);
       } else {
         handleError(message);
