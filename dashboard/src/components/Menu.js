@@ -15,7 +15,7 @@ const Menu = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.get("http://localhost:3002/logout", {
+      await axios.get("/logout",{
         withCredentials: true,
       });
 

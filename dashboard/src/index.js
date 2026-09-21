@@ -7,7 +7,7 @@ import "./index.css";
 import Home from "./components/Home";
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = "http://localhost:3002";
+axios.defaults.baseURL = "https://zerodha-clone-mfwh.onrender.com";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
